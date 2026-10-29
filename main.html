@@ -20,17 +20,17 @@
         }
 
         .block-heading h2 {
-            color: #3b99e0;
+            color: #3b99e0 !important;
         }
 
         .block-heading p {
             max-width: 500px;
-            margin: auto;
+            margin: 0 auto;
             color: #7d7d7d;
         }
 
         .content {
-            background-color: #fff;
+            background-color: #ffffff;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
             margin-bottom: 20px;
         }
@@ -42,6 +42,7 @@
 
         .product img {
             max-height: 100px;
+            width: 100%;
             object-fit: contain;
         }
 
@@ -49,15 +50,17 @@
             padding-left: 10px;
         }
 
-        .product .info .product-name {
+        .product-name {
             color: #007bff;
+            font-size: 14px;
             margin-bottom: 15px;
         }
 
-        .product .info .product-info {
+        .product-info {
             font-size: 13px;
-            color: #555;
+            color: #555555;
             line-height: 1.5;
+            margin-bottom: 0;
         }
 
         .quantity {
@@ -71,8 +74,8 @@
         }
 
         .summary {
-            background-color: #f7fbff;
-            border-top: 2px solid #5ea4f3;
+            background-color: #f7fbff !important;
+            border-top: 2px solid #5ea4f3 !important;
             padding: 30px 20px;
             height: 100%;
         }
@@ -83,12 +86,12 @@
             font-size: 20px;
         }
 
-        .summary .summary-item {
+        .summary-item {
             border-bottom: 1px solid #e5e5e5;
             padding: 10px 0;
         }
 
-        .summary .summary-item.total {
+        .summary-item.total {
             border-bottom: none;
         }
 
@@ -96,7 +99,7 @@
             background-color: #007bff;
             border: none;
             border-radius: 5px;
-            color: white;
+            color: #ffffff;
             padding: 12px;
             width: 100%;
             font-size: 18px;
@@ -116,33 +119,46 @@
                 max-height: 80px;
             }
 
+            .product-name {
+                font-size: 13px;
+            }
+
+            .price {
+                font-size: 16px;
+            }
+
             .summary {
                 padding: 25px 20px;
             }
         }
     </style>
 </head>
+
 <body>
 
 <div class="container">
 
+    <!-- Page Heading -->
     <div class="block-heading">
-        <h2>Shopping cart</h2>
+        <h2 style="color: #3b99e0;">Shopping cart</h2>
         <p>
-            The customer is very important, the customer will be
-            followed by the customer. Now, as an urn, I have
+            The customer is very important, the customer will
+            be followed by the customer. Now, as an urn, I have
             no right to be in possession of property.
         </p>
     </div>
 
+    <!-- Main Content -->
     <div class="content">
         <div class="row no-gutters">
 
+            <!-- Products Section -->
             <div class="col-lg-8">
 
                 <!-- Product 1 -->
                 <div class="product">
                     <div class="row align-items-center">
+
                         <div class="col-3 col-md-3">
                             <img
                                 src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg"
@@ -151,7 +167,7 @@
                         </div>
 
                         <div class="col-5 col-md-4 info">
-                            <h5 class="product-name">I am very sorry</h5>
+                            <h6 class="product-name">I am very sorry</h6>
                             <p class="product-info">
                                 Display: 5 inches<br>
                                 RAM: 4GB<br>
@@ -169,12 +185,14 @@
                         <div class="col-2">
                             <span class="price">$120</span>
                         </div>
+
                     </div>
                 </div>
 
                 <!-- Product 2 -->
                 <div class="product">
                     <div class="row align-items-center">
+
                         <div class="col-3 col-md-3">
                             <img
                                 src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg"
@@ -183,7 +201,7 @@
                         </div>
 
                         <div class="col-5 col-md-4 info">
-                            <h5 class="product-name">I am very sorry</h5>
+                            <h6 class="product-name">I am very sorry</h6>
                             <p class="product-info">
                                 Display: 5 inches<br>
                                 RAM: 4GB<br>
@@ -201,12 +219,14 @@
                         <div class="col-2">
                             <span class="price">$120</span>
                         </div>
+
                     </div>
                 </div>
 
                 <!-- Product 3 -->
                 <div class="product">
                     <div class="row align-items-center">
+
                         <div class="col-3 col-md-3">
                             <img
                                 src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg"
@@ -215,7 +235,7 @@
                         </div>
 
                         <div class="col-5 col-md-4 info">
-                            <h5 class="product-name">I am very sorry</h5>
+                            <h6 class="product-name">I am very sorry</h6>
                             <p class="product-info">
                                 Display: 5 inches<br>
                                 RAM: 4GB<br>
@@ -233,14 +253,16 @@
                         <div class="col-2">
                             <span class="price">$120</span>
                         </div>
+
                     </div>
                 </div>
 
             </div>
 
-            <!-- Summary -->
+            <!-- Summary Section -->
             <div class="col-lg-4">
                 <div class="summary">
+
                     <h3>Summary</h3>
 
                     <div class="summary-item d-flex justify-content-between">
@@ -264,6 +286,7 @@
                     </div>
 
                     <button type="button">checkout</button>
+
                 </div>
             </div>
 
