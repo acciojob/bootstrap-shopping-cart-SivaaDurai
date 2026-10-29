@@ -20,7 +20,7 @@
         }
 
         .block-heading h2 {
-            color: #3b99e0 !important;
+            color: #3b99e0;
         }
 
         .block-heading p {
@@ -41,8 +41,8 @@
         }
 
         .product img {
-            max-height: 100px;
             width: 100%;
+            height: 90px;
             object-fit: contain;
         }
 
@@ -74,8 +74,8 @@
         }
 
         .summary {
-            background-color: #f7fbff !important;
-            border-top: 2px solid #5ea4f3 !important;
+            background-color: #f7fbff;
+            border-top: 2px solid #5ea4f3;
             padding: 30px 20px;
             height: 100%;
         }
@@ -116,11 +116,15 @@
             }
 
             .product img {
-                max-height: 80px;
+                height: 65px;
             }
 
             .product-name {
-                font-size: 13px;
+                font-size: 12px;
+            }
+
+            .product-info {
+                font-size: 11px;
             }
 
             .price {
@@ -138,9 +142,8 @@
 
 <div class="container">
 
-    <!-- Page Heading -->
     <div class="block-heading">
-        <h2 style="color: #3b99e0;">Shopping cart</h2>
+        <h2>Shopping cart</h2>
         <p>
             The customer is very important, the customer will
             be followed by the customer. Now, as an urn, I have
@@ -148,11 +151,9 @@
         </p>
     </div>
 
-    <!-- Main Content -->
     <div class="content">
         <div class="row no-gutters">
 
-            <!-- Products Section -->
             <div class="col-lg-8">
 
                 <!-- Product 1 -->
@@ -160,10 +161,20 @@
                     <div class="row align-items-center">
 
                         <div class="col-3 col-md-3">
-                            <img
-                                src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg"
-                                class="img-fluid"
-                                alt="Product 1">
+                            <div class="row">
+                                <div class="col-4 px-1">
+                                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg"
+                                         class="img-fluid" alt="Product 1 image 1">
+                                </div>
+                                <div class="col-4 px-1">
+                                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg"
+                                         class="img-fluid" alt="Product 1 image 2">
+                                </div>
+                                <div class="col-4 px-1">
+                                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg"
+                                         class="img-fluid" alt="Product 1 image 3">
+                                </div>
+                            </div>
                         </div>
 
                         <div class="col-5 col-md-4 info">
@@ -194,10 +205,20 @@
                     <div class="row align-items-center">
 
                         <div class="col-3 col-md-3">
-                            <img
-                                src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg"
-                                class="img-fluid"
-                                alt="Product 2">
+                            <div class="row">
+                                <div class="col-4 px-1">
+                                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg"
+                                         class="img-fluid" alt="Product 2 image 1">
+                                </div>
+                                <div class="col-4 px-1">
+                                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg"
+                                         class="img-fluid" alt="Product 2 image 2">
+                                </div>
+                                <div class="col-4 px-1">
+                                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg"
+                                         class="img-fluid" alt="Product 2 image 3">
+                                </div>
+                            </div>
                         </div>
 
                         <div class="col-5 col-md-4 info">
@@ -228,10 +249,20 @@
                     <div class="row align-items-center">
 
                         <div class="col-3 col-md-3">
-                            <img
-                                src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg"
-                                class="img-fluid"
-                                alt="Product 3">
+                            <div class="row">
+                                <div class="col-4 px-1">
+                                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg"
+                                         class="img-fluid" alt="Product 3 image 1">
+                                </div>
+                                <div class="col-4 px-1">
+                                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg"
+                                         class="img-fluid" alt="Product 3 image 2">
+                                </div>
+                                <div class="col-4 px-1">
+                                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg"
+                                         class="img-fluid" alt="Product 3 image 3">
+                                </div>
+                            </div>
                         </div>
 
                         <div class="col-5 col-md-4 info">
@@ -259,7 +290,7 @@
 
             </div>
 
-            <!-- Summary Section -->
+            <!-- Summary -->
             <div class="col-lg-4">
                 <div class="summary">
 
